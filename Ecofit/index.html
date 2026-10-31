@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFit - Sog'lom Turmush Tarzi Portali</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .internal-notice {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 12px;
+            border-left: 5px solid #2e7d32;
+            border-radius: 4px;
+            margin: 20px 0;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Eco<span>Fit</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Bosh sahifa</a></li>
+                <li><a href="#about">Biz haqimizda</a></li>
+                <li><a href="#schedule">Darslar jadvali</a></li>
+                <li><a href="#zones">Mashq zonalari</a></li>
+                <li><a href="#media-section">Media</a></li>
+                <li><a href="#register">A'zolik</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Asosiy qism -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+           
+            <h1 style="text-transform: uppercase; letter-spacing: 2px;">Tana va Ruh Uyg'unligi</h1>
+            <p>O'zingizga bo'lgan ishonchni EcoFit bilan yangi bosqichga olib chiqing.</p>
+            <a href="#register" class="btn-primary pulse-btn">A'zo bo'lish</a>
+        </div>
+    </section>
+
+    <main class="container">
+
+       
+        <div class="internal-notice">
+             <strong>Eslatma:</strong> Yangi a'zolar uchun haftalik bepul sinov mashg'ulotlari ochildi!
+        </div>
+
+       
+        <section id="about" class="section-card">
+            <h2>Nega aynan EcoFit?</h2>
+            <p>Bizning markazimiz sizga sog'lom va bardavom hayot kechirish uchun barcha qulayliklarni taqdim etadi:</p>
+            
+            <div class="lists-wrapper">
+                <div>
+                    <h3>Bizning afzalliklarimiz :</h3>
+                    <ul class="styled-list">
+                        <li>Zamonaviy va xavfsiz trenajyorlar</li>
+                        <li>Xalqaro sertifikatga ega tajribali murabbiylar</li>
+                        <li>Shaxsiy ovqatlanish ratsioni nazorati</li>
+                        <li>Dush, sauna va dam olish xonalari</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Boshlash bosqichlari:</h3>
+                    <ol class="styled-ordered-list">
+                        <li>Sayt orqali onlayn ro'yxatdan o'ting</li>
+                        <li>Tibbiy-diagnostika ko'rigidan o'ting</li>
+                        <li>O'zingizga mos dastur va murabbiyni tanlang</li>
+                        <li>Muntazam mashg'ulotlarni boshlang</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="schedule" class="section-card">
+            <h2>Haftalik Mashg'ulotlar Jadvali</h2>
+            <div class="table-container">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Kunlar</th>
+                            <th>Mashg'ulot turi</th>
+                            <th>Vaqti</th>
+                            <th>Murabbiy</th>
+                            <th>Zal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dushanba, Chorshanba</td>
+                            <td>Krossfit & Kuch mashqlari</td>
+                            <td>08:00 - 10:00</td>
+                            <td class="trainer-cell">
+                                <img src="images/murabbiy3.png" alt="Aziz Rahimov" class="trainer-avatar">
+                                <span>Aziz Rahimov</span>
+                            </td>
+                            <td>A-Zal</td>
+                        </tr>
+                        <tr>
+                            <td>Seshanba, Payshanba</td>
+                            <td>Yoga va Stretch</td>
+                            <td>10:00 - 11:30</td>
+                            <td class="trainer-cell">
+                                <img src="images/murabbiy.png" alt="Madina Karimova" class="trainer-avatar">
+                                <span>Madina Karimova</span>
+                            </td>
+                            <td>B-Zal</td>
+                        </tr>
+                        <tr>
+                            <td>Juma, Shanba</td>
+                            <td>Kardio & Boks</td>
+                            <td>18:00 - 20:00</td>
+                            <td class="trainer-cell">
+                                <img src="images/murabbiy2.png" alt="Jasur Aliyev" class="trainer-avatar">
+                                <span>Jasur Aliyev</span>
+                            </td>
+                            <td>C-Zal</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 9 va 5-ko'rsatkichlar: Map tegi va Rasmlar -->
+        <section id="zones" class="section-card">
+            <h2>Interaktiv Mashq Zonalari (Map tegi)</h2>
+            <p>Rasm ustidagi qismlarni bosing (Yelka/Qo'l yoki Oyoq sohasiga bosing):</p>
+            
+            <div class="map-wrapper">
+                <!-- Rasmga usemap biriktirilgan -->
+                <img src="images/body-map.jpg" alt="Mashq zonalari" usemap="#body-workout-map" class="interactive-img">
+                
+                <map name="body-workout-map">
+                    <!-- Yelka va qo'l sohasi (to'rtburchak koordinata) -->
+                    <area shape="rect" coords="50,20,250,150" href="#upper-body" alt="Yuqori qism" title="Yuqori tana mashqlari">
+                    <!-- Oyoq sohasi (aylana koordinata) -->
+                    <area shape="circle" coords="150,250,60" href="#lower-body" alt="Quyi qism" title="Oyoq va kardio mashqlari">
+                </map>
+            </div>
+
+            <div id="upper-body" class="zone-info">
+                <h4> Yuqori tana: Gantel va turnik mashqlari tavsiya etiladi.</h4>
+            </div>
+            <div id="lower-body" class="zone-info">
+                <h4> Quyi tana: O'tirib-turish va yugurish mashqlari tavsiya etiladi.</h4>
+            </div>
+        </section>
+
+        <!-- 6, 7 va 8-ko'rsatkichlar: Audio, Video va Tashqi fayllar (PDF) -->
+        <section id="media-section" class="section-card">
+            <h2>Multimedia va Qo'shimcha Resurslar</h2>
+            
+            <div class="media-grid">
+                <!-- 7-ko'rsatkich: Video -->
+                <div class="media-item">
+                    <h3>Texnika va Mashq Jarayoni</h3>
+                    <video controls width="100%">
+                        <source src="media/mashg‘ulot.mp4" type="video/mp4">
+                        Brauzeringiz video tegini qo'llab-quvvatlamaydi.
+                    </video>
+                </div>
+
+                <!-- 6-ko'rsatkich: Audio -->
+                <div class="media-item">
+                    <h3>Mashg'ulot uchun Motivatsion Audio</h3>
+                    <audio controls style="width: 100%; margin-top: 20px;">
+                        <source src="media/motivatsiya.mp3" type="audio/mpeg">
+                        Brauzeringiz audio tegini qo'llab-quvvatlamaydi.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- 8-ko'rsatkich: Tashqi PDF fayl bog'lanishi -->
+            <div class="download-box">
+                <p>Haftalik batafsil mashqlar va to'g'ri ovqatlanish ratsionini yuklab oling:</p>
+                <a href="media/reja.pdf" download class="btn-download">📄 Dasturni PDF shaklida yuklab olish</a>
+            </div>
+        </section>
+
+        <!-- 10-ko'rsatkich: Forma (Registration Form) -->
+        <section id="register" class="section-card">
+            <h2>A'zolik uchun Ro'yxatdan O'tish</h2>
+            <form action="#" method="POST" class="styled-form">
+                <div class="form-group">
+                    <label for="fullname">To'liq ismingiz:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Azizbek Valiyev" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Elektron pochta manzilingiz:</label>
+                    <input type="email" id="email" name="email" placeholder="misol@ecofit.uz" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefon raqamingiz:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+998 90 123 45 67" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Yo'nalishni tanlang:</label>
+                    <select id="course" name="course">
+                        <option value="crossfit">Krossfit & Kuch mashqlari</option>
+                        <option value="yoga">Yoga va Qad-qomatni tiklash</option>
+                        <option value="cardio">Kardio va Ozish</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Mashg'ulot vaqti:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="shift" value="morning" checked> Ertalabki</label>
+                        <label><input type="radio" name="shift" value="evening"> Kechki</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Qo'shimcha izoh yoki sog'liqdagi cheklovlar:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Masalan: Umurtqa sohasida jarohat bor..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Arizani jo'natish</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pastki qism (Footer) -->
+    <footer class="footer">
+        <p>&copy; 2026 EcoFit Veb Tizimi. Mustaqil ta'lim ishi uchun tayyorlandi.</p>
+    </footer>
+
+</body>
+</html>
